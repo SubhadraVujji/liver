@@ -47,7 +47,7 @@ if st.button("Predict"):
                 # Show confidence score
                 probabilities = model.predict_proba(scaled_input)[0]
                 confidence = max(probabilities) * 100
-                st.info(f"Probability Score: {confidence:.2f}%")
+                st.info(f"Probability/Score: {confidence:.2f}%")
 
         except ValueError:
             st.error("All inputs must be numeric.")
